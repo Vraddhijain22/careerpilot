@@ -1,0 +1,28 @@
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# Python virtual environments
+.venv/
+venv/
+env/
+
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Local databases and user data
+*.db
+*.sqlite
+*.sqlite3
+careerpilot.db
+
+# macOS files
+.DS_Store
+
+# Logs
+*.log
