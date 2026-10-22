@@ -1,6 +1,7 @@
-# CareerPilot AI (local MVP)
+# CareerPilot AI 🚀
 
-A local job-search workspace with PDF/text resume input, transparent baseline skill matching, an application tracker, AI-assisted drafts grounded in resume text, and interview practice. Supports Gemini and Ollama providers.
+An AI-powered career assistant for resume analysis, job matching, application tracking, and interview preparation.
+
 
 ## Requirements
 - macOS with Python 3.12 or 3.13 recommended
@@ -42,12 +43,16 @@ pytest -q
 ```
 
 ## Features
-- PDF text extraction is performed in memory; the original PDF is not saved by the app.
-- Extracted resume text is saved locally in SQLite.
-- Manual job description and URL entry. URLs are stored as references; the app does not scrape job sites automatically.
-- Skill match score is a simple skill-overlap indicator, not a hiring probability or a full semantic score.
-- AI drafts include evidence and verification notes; review before sending.
-- AI calls send resume and job description text to the selected provider. Choose Ollama if you need local model inference.
+- **Resume Analysis****:** Extract text from PDF and text resumes.
+- **Job Matching:** Compare resume skills with job descriptions using skill-overlap scoring.
+- **Application Tracking:** Organize applications and follow-up dates.
+- **AI-Assisted Drafts:** Generate application drafts grounded in resume and job details.
+- **Interview Practice:** Practice questions and review AI-generated feedback.
+- **AI Providers:** Google Gemini and Ollama.
+
+## Tech Stack
+Python · Streamlit · SQLite · Google Gemini · Ollama · Docker · GitHub
+
 
 ## Current MVP limitations
 - Local prototype; no authentication or multi-user isolation.
@@ -55,6 +60,11 @@ pytest -q
 - No automatic email sending, job-board scraping, or application submission.
 - Review model output before using it. Do not treat match score or interview feedback as a hiring prediction.
 
-## Security notes
-- `.env`, database files, and resume text should not be committed to source control.
-- Keep the app bound to localhost. Do not expose it publicly without authentication, access controls, rate limits, and a security review.
+## Notes
+- Match scores indicate skill overlap, not hiring probability.
+- Job links are stored as references; automatic scraping and application submission are not supported.
+- Review AI-generated content before use.
+- The MVP does not provide authentication or multi-user isolation.
+
+## Live Demo
+https://careerpilot-ai-vraddhi.streamlit.app/
