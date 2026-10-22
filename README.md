@@ -43,7 +43,7 @@ pytest -q
 ```
 
 ## Features
-- **Resume Analysis****:** Extract text from PDF and text resumes.
+- **Resume Analysis:** Extract text from PDF and text resumes.
 - **Job Matching:** Compare resume skills with job descriptions using skill-overlap scoring.
 - **Application Tracking:** Organize applications and follow-up dates.
 - **AI-Assisted Drafts:** Generate application drafts grounded in resume and job details.
