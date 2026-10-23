@@ -1,4 +1,4 @@
-# CareerPilot AI 🚀
+# CareerPilot 🚀
 
 An AI-powered career assistant for resume analysis, job matching, application tracking, and interview preparation.
 
